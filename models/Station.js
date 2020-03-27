@@ -4,12 +4,6 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-
-const Schema = mongoose.Schema;
-
-const stationSchema = new Schema({
-
-})
 const stationSchema = new Schema({
   Title: String, 
   AddressLinel: String,
