@@ -18,7 +18,7 @@ const connectionRoute = require('./routes/connectionRoute');
 app.use('/station', stationRoute);
 app.use('/connection', connectionRoute); 
 
-const port = 3025; 
+const port = 3005; 
 db.on('connected', () => { 
   app.listen(port, () => console.log(`App can be run from port ${port}!`));
 });  
