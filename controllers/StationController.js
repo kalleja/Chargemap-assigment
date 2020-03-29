@@ -6,9 +6,8 @@ const station_list_get = async (req, res) => {
     const stations = await stationModel.find();
     res.json(stations);
   } catch (e) {
-    res.send(500).json({
-      message: e.message
-    });
+    console.error('station_list_get', e);
+    res.send(500).json({message: e.message});
   }
 };
 
@@ -24,11 +23,12 @@ const station_get = async (req, res) => {
 };
 
 const station_post = (req, res) => {
-  res.send('With this endpoint you can add stations');
+  res.send('In this forsaken endpoint you can add a stations');
 };
 
 module.exports = {
   station_list_get,
   station_get,
   station_post,
-};
+  
+}; 
