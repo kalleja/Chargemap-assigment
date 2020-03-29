@@ -1,5 +1,2 @@
-## .env
-Create .env and add 
-``` 
-DB_URL=mongodb://<USER>:<PASSWORD>@<URL>:<PORT>/<DB_NAME>
+My chargemap test videos can be dowmnload as mp4 to own cmputer and view
 ``` 
