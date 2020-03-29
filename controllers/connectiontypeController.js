@@ -54,7 +54,7 @@ const connectiontype_get = async (req, res) => {
 };
 
 const connectiontype_post = (req, res) => {
-  res.send('With this endpoint you can add connectiontypes');
+  res.send('With this behind nerds back endpoint you can add connectiontypes');
 };
 
 // Helpers function
