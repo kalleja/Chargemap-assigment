@@ -13,7 +13,7 @@ const connectiontype_list_get = async (req, res) => {
 
 const connectiontype_get = async (req, res) => {
   try {
-    const connectiontypes = await connectiontypeModel.findById(req.params.id);
+    const connectiontypes = await connectiontypeModel.find().populate('LevelID');
     res.json(connectiontypes);
   } catch (e) {
     res.send(500).json({

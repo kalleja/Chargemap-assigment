@@ -3,7 +3,7 @@ const stationModel = require('../models/Station');
 
 const station_list_get = async (req, res) => {
   try {
-    const stations = await stationModel.find().populate('connections');
+    const stations = await stationModel.find().populate('Connections');
     res.json(stations);
   } catch (e) {
     console.error('station_list_get', e);

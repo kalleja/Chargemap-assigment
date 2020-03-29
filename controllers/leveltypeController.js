@@ -13,7 +13,7 @@ const leveltype_list_get = async (req, res) => {
 
 const leveltype_get = async (req, res) => {
   try {
-    const leveltypes = await leveltypeModel.findById(req.params.id);
+    const leveltypes = await leveltypeModel.find().populate('CurrentTypeID');
     res.json(leveltypes);
   } catch (e) {
     res.send(500).json({
