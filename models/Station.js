@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const stationSchema = new Schema({
+  id: String,
   Title: String, 
   AddressLinel: String,
   Town: String,

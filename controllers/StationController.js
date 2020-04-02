@@ -51,7 +51,7 @@ const station_get = async (req, res) => {
 };
 
 const station_post = (req, res) => {
-  res.send('With this forsaken endpoint you can add stations');
+  res.send('With this endpoint you can add stations');
 };
 
 // Helpers function

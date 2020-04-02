@@ -54,7 +54,7 @@ const connection_get = async (req, res) => {
 };
 
 const connection_post = (req, res) => {
-  res.send('With this forsaken endpoint you can add connections');
+  res.send('With this endpoint you can add connections');
 };
 
 // Helpers function
