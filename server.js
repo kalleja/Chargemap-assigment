@@ -23,7 +23,6 @@ app.use("/connection", connectionRoute);
 
 app.use("/auth", authrosationRoute);
 
-
 const port = 3025;   
 db.on('connected', () => { 
   app.listen(port, () => console.log(`App can be run from port ${port}!`));
