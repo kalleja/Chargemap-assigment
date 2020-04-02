@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 const levelSchema = new Schema({
     Comments: String,
     IsFastChargeCapable: Boolean,
-    Title: String
+    Title: String,
 });
 
 
-module.exports = mongoose.model('LevelID', levelSchema);
+module.exports = mongoose.model('level', levelSchema);

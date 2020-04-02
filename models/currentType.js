@@ -1,13 +1,12 @@
-const mongoose = require('mongoose');
+"use strict";
+
+const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const currentTypeSchema = new Schema({
-    id:String,
-    Description:String,
-    Title:String,
-    
-  
+const currenttypeSchema = new Schema({
+    Description: String,
+    Title: String
 });
 
-module.exports = mongoose.model('CurrentTypeID', currentTypeSchema);
+module.exports = mongoose.model("CurrentType", currenttypeSchema);

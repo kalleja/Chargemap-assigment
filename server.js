@@ -1,6 +1,5 @@
 'use strict';
-
-
+ 
 require('dotenv').config();
 const express = require('express');
 const app = express();
@@ -10,9 +9,9 @@ require('./models/connection');
 require('./models/connectionType');
 require('./models/level');
 require('./models/station');
-require('./models/currentType');
+require('./models/currentType'); 
 
-const stationRoute = require('./routes/stationRoute');
+const stationRoute = require('./routes/StationRoute');
 const connectionRoute = require('./routes/connectionRoute');
 const authrosationRoute = require('./routes/authenticationRoute')
 
@@ -25,7 +24,7 @@ app.use("/connection", connectionRoute);
 app.use("/auth", authrosationRoute);
 
 
-const port = 3025; 
+const port = 3025;   
 db.on('connected', () => { 
   app.listen(port, () => console.log(`App can be run from port ${port}!`));
 });  

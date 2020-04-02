@@ -1,12 +1,10 @@
-// https://docs.mongodb.com/manual/core/2dsphere/
-
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const connectionSchema = new Schema({
-    ConnectionTypeID: Array,
-    LevelID: Array,
-    CurrentTypeID: Array,
+    ConnectionTypeID: {type: mongoose.Types.ObjectId, ref: 'ConnectionType'},
+    LevelID: {type: mongoose.Types.ObjectId, ref: 'level'},
+    CurrentTypeID: {type: mongoose.Types.ObjectId, ref: 'CurrentType'},
     Quantity: Number, 
 });
 
