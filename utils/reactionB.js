@@ -8,7 +8,7 @@ module.exports =(topRight, bottomLeft)=> (
             [topRight.lng, topRight.lat],
             [bottomLeft.lng, bottomLeft.lat],
             [bottomLeft.lng, bottomLeft.lat],
-
+ 
     ],
 ],
 }
